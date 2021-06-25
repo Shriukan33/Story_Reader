@@ -56,5 +56,5 @@ while True: # The code will run until it reaches the outcome "exit"
 
     answer = set_outcome(current_page, outcomes) 
     current_page, outcomes = read(pages[current_page]["outcomes"][answer])
-    if pages[current_page]["outcomes"][answer] == "exit":
+    if pages[current_page]["outcomes"][0] == "exit":
         break
